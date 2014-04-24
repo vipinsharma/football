@@ -26,7 +26,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ $config['index_page'] = 'index.php';
 | 'ORIG_PATH_INFO'	Uses the ORIG_PATH_INFO
 |
 */
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']	= 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'f$0ot#b776A)!(ll';
 
 /*
 |--------------------------------------------------------------------------
@@ -356,6 +356,28 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
+
+
+/* End of file config.php */
+/* Location: ./application/config/config.php */
+
+/*
+| -------------------------------------------------------------------
+|  Native Auto-load
+| -------------------------------------------------------------------
+|
+| Nothing to do with config/autoload.php, this allows PHP autoload to work
+| for base controllers and some third-party libraries.
+| http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY
+|
+*/
+function __autoload($class)
+{
+ if(strpos($class, 'CI_') !== 0)
+ {
+  @include_once( APPPATH . 'core/'. $class . EXT );
+ }
+}
 
 
 /* End of file config.php */

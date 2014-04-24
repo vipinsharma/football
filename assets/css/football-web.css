@@ -1,0 +1,183 @@
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+ /* body padding for fixed top nav */
+}
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background-color: #e1e1e1;
+ /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+  margin-bottom: 45px;
+}
+
+.tooltip-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.linkedin-link a:hover {
+  color: #007fb1;
+}
+
+.twitter-link a:hover {
+  color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+  color: #d14836;
+}
+
+/* Service Page Styles */
+.service-icon {
+  font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+  font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+  font-size: 4em;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+  margin: 50px 0;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+  .carousel {
+    height: 70%;
+ /* increases the carousel height so it looks good on phones */
+  }
+}
+
+
+/*------------pd----------------------------------*/
+/* apply a natural box layout model to all elements */
+/**, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }*/
+.bx-size { 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.loginwrap{ background: url(../images/bglogin.png) repeat; font-family:Helvetica, Arial,  sans-serif; 
+color:#FFF; margin-top:0px; padding-top:0px; padding-top:2%; padding-bottom:3%; }
+.loginwrap1{ max-width:1008px; margin-bottom:50px;}
+.loginbox{  background: url(../images/bggreen.png) repeat center top;  margin:0 auto!important; float:none; 
+border:5px solid #FFF;  margin-bottom: 50px;}
+.ticketholderlogin{ height:270px;  padding:5px; border-right:5px solid #FFF;}
+.openingday{ height:270px}
+
+.loginbxhead { background:#191919; font-size:16px; font-weight:bold; padding:5px; text-align:center; text-transform:uppercase;}
+.btnlogin{ display:inline-block;     background: #191919;    border:1px solid #fff;    
+color: #FFFFFF; padding:3px 8px; font-size:18px; text-transform:uppercase; font-weight:bolder;  }
+a:hover.btnlogin{ color:#F00; text-decoration:none;}
+
+.loginbox .checkbox{ float:right; text-align:right; font-size:12px;}
+.loginbox .checkbox input[type="checkbox"]{   margin-left:0px;   margin-right:5px;}
+a.forgotpassword{ color:#FFF; display:inline-block; margin-top:5px; text-decoration:underline; }
+.aligncenter{ text-align:center;}
+.btnwrap{ text-align:center;}
+.forgotpas{ height:auto;}
+
+.form-group input{ font-weight:bold; color:#000; font-style:italic;}
+.form-control{color:#fff;}
+.loginlabel{text-shadow: 1px 1px 1px #000; font-size:14px; text-transform:uppercase; font-weight:bold; margin-bottom:2px;}
+.loginbox .panel-body{ padding:10px 5px 5px 5px;} 
+.headrimg{ margin-top:10px; text-align:center;}
+.headrimg img.img-responsive{ margin:0 auto;}
+/*.ticketholderlogin .leftsec{}
+.ticketholderlogin .rightsec{ }
+.ticketholderlogin .rightsec input{ }*/
+
+.txtfieldps input{ width:47%; float:left;}
+.confirmpassword{ margin-left:6%}
+.rightsec .checkbox { float:left;}
+.rightsec .btnwrap{ margin-top:10px; width:100%; float:left;}
+.loginbox .panel-body{ float:left; width:100%;}
+.logologin{ text-align:center;  margin:0 auto}
+.logologin img.img-responsive{ margin:0 auto;}

@@ -37,5 +37,10 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
+/* security site key used for password encryption */
+define('SITE_KEY', 'ade41#@dd(*)J-3654sgjbnjbdnb4jenbd');
+
+// Login script: administrator account name
+define('ADMINISTRATOR', "administrator");
 /* End of file constants.php */
-/* Location: ./application/config/constants.php */
+/* Location: ./application/config/constants.php */ 
