@@ -24,7 +24,7 @@ class Forgot_password_model extends CI_Model {
            'email' => $email
         );
 
-        $this->db->set('date_added', 'NOW()', FALSE);
+        //$this->db->set('date_added', 'NOW()', FALSE);
         $this->db->insert('recover_password', $data);
 
         if ($this->db->affected_rows() == 1) {

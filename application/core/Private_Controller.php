@@ -17,10 +17,10 @@ class Private_Controller extends MY_Controller
                 $this->session->set_userdata('logged_in', true);
                 $this->session->set_userdata('username', $data['username']);
                 $this->session->set_userdata('role_id', $data['role_id']);
-                redirect("/membership/login");
+                redirect("/welcome/login");
             }
         }elseif(!$this->session->userdata('logged_in') && !get_cookie('unique_token')) {
-            redirect("/membership/login");
+            redirect("/welcome/login");
         }
         $this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
         $this->output->set_header("Pragma: no-cache");

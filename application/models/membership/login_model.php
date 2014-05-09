@@ -29,7 +29,6 @@ class Login_model extends CI_Model {
 
         if($query->num_rows() == 1) {
            $row = $query->row();
-
            // check for password match based on password_helper.php
            if($row->banned == 1) {
                return "banned";

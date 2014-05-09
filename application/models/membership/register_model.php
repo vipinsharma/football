@@ -45,6 +45,38 @@ class Register_model extends CI_Model {
         return false;
     }
 
+    public function check_mail($email){
+	$this->db->select('id');
+        $this->db->from('user');
+        $this->db->where('email', strtolower($email));
+        $this->db->limit(1);
+        $query = $this->db->get();
+        if($query->num_rows() == 1) {
+            return  1;
+        }
+        return 0;
+    }
+
+    /**
+     *
+     * activate_member
+     *
+     * @param string $email e-mail addres of member
+     * @param string $nonce the member nonce
+     * @return boolean
+     *
+     */
+
+    public function activate_member($email, $nonce) {
+        $data = array('active' => 1);
+        $where = array('email' => $email, 'nonce' => $nonce, 'unix_timestamp(NOW()) - unix_timestamp(last_login) <' => Settings_model::$db_config['activation_link_expires']);
+        $this->db->where($where);
+        $this->db->update('user', $data);
+        if($this->db->affected_rows() == 1) {
+            return true;
+        }
+        return false;
+    }
 
 }
 

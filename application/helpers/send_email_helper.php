@@ -24,10 +24,10 @@ if (!function_exists('load_email_config')) {
             case 3:
                 $config = array(
                     'protocol' => 'smtp',
-                    'smtp_host' => Settings_model::$db_config['smtp_host'],
-                    'smtp_port' => Settings_model::$db_config['smtp_port'],
-                    'smtp_user' => $this->encrypt->encode($this->input->post('smtp_user')),
-					'smtp_pass' => $this->encrypt->encode($this->input->post('smtp_pass')),
+                    'smtp_host' => 'mgftest@mygridironface.com',
+                    'smtp_port' => 26,
+                    'smtp_user' => $this->encrypt->encode('mgftest@mygridironface.com'),
+					'smtp_pass' => $this->encrypt->encode('mgf7nfl7'),
                     'smtp_timeout' => 30,
                     'charset' => "utf-8",
                     'newline' => "\r\n"
@@ -38,5 +38,15 @@ if (!function_exists('load_email_config')) {
     }
 }
 
-/* End of file send_email_helper.php */
+
+/*
+Smtp: mail.mygridironface.com
+
+Port: 26
+
+Username: mgftest@mygridironface.com
+
+Password: mgf7nfl7
+
+ End of file send_email_helper.php */
 /* Location: ./application/helpers/send_email_helper.php */
